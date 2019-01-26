@@ -15,9 +15,10 @@
 </head>
 <body>
 	<div>
-		<h1>Comment Box</h1>
+		<h1 style="text-align: center;">Comment Box</h1>
 	</div>
-	
+	<div class="container">
+		
 		<form > 
 			<label>Name: </label>
 			<input type="text" id="Name" name="Name" oninvalid="alert('You must fill out the form!');" required>
@@ -33,21 +34,27 @@
 			<br>
 			<input type="button" value="button" onclick ="results(this.form);" id="display" style="height: 40px; width:80px;align-content: center;">
 		</form>
-
+	</div>
+	<br>
+	<div class="container-fluid">
+	
 	<H1>Comments</H1>
 	<p id="demo" style="font-size: 16px"></p>
 	
 	<p id="errors"></p>
+	</div>
 	  <script type="text/JavaScript">
 		function results(form) {
+			
 			text=form.Name.value;
 			message=form.Comment.value;
-			if(form.password.value=="p") {
-
-			/*document.getElementById('demo').style.fontSize = "xx-large";*/
 			
-			document.getElementById('demo').innerHTML+='<p>'+"comment:" +message;
-			document.getElementById('demo').innerHTML+=' <p>'+"User:" +text;
+
+
+			if(form.password.value=="p") {
+			
+			
+				document.getElementById('demo').innerHTML='<h2>'+"comment:" +message + '<p>'+'<font size="-1"> '+ "User:"+'</font>'+'<font size="-1"> '+text+'</font>' + document.getElementById('demo').innerHTML;
 			}
 			else{
 				 document.getElementById('errors').innerHTML="*Please Enter valid password*";

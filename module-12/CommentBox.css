@@ -6,10 +6,20 @@
     top: 20%;
   }*/
 
+.container{
+	border-radius: 4px;
+	background-color: lightblue;
+}
   h1{
   	text-align: center;
   }
 
+h2{
+	text-align: left;
+}
+p{
+	height: 30px;
+}
 
 
  
