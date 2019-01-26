@@ -53,18 +53,20 @@
 			
 			text=form.Name.value;
 			message=form.Comment.value;
-			
+			if(form.Comment.value==""|| form.Name.value=="" ||form.password.value=="") {
+				alert(" Enter details" );
+			}
 
-
+			else{
 			if(form.password.value=="p") {
 			
 			
 				document.getElementById('demo').innerHTML='<h2>'+"comment:" +message + '<p>'+'<font size="-1"> '+ "User:"+'</font>'+'<font size="-1"> '+text+'</font>' + document.getElementById('demo').innerHTML;
 			}
 			else{
-				 document.getElementById('errors').innerHTML="*Please Enter valid password*";
+				 alert(" Please Enter valid password");
 			}
-			
+			}
 		}
 	</script>
 	
