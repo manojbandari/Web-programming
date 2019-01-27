@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dynamic Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="QuizDynamic.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="QuizDynamic.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="style">
+		</div>
+		<div class="right-arrow">			
+		</div>
+		<div class="style1">
+			<center><b><p id="text">JavaScript Quiz</p></b></center>
+		</div>
+		<div class="left-arrow">
+		</div>
+		<div style="background-color: skyblue; width:100%"></div>
+		</div>
+		<div class="window" id="window">
+			<ul>
+				<li>
+					<p id="question 1"></p> 
+				</li>
+				<img src="hint.png" width="25px" data-toggle="collapse" data-target="#demo">
+				<div id="demo" class="collapse">
+				
+				<div class="alert alert-warning alerrt-dismissible" id="hint 1">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				</div>
+				</div>
+				<div id="radio 1" ></div>
+				<div id="feedback 1"></div>
+
+			</ul>
+			<div >
+				<button type="button" style="float: left;" id="Prev" onclick="prev()">Prev</button>
+				<button type="button"  style="float: right" id="Next" onclick="next()">Next</button>
+
+			</div>
+		</div>
+		<div class="window1">
+			<button type="button" onclick="reset()">Reset</button>
+		</div>
+
+</body>
+</html>

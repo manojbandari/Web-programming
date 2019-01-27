@@ -1,0 +1,14 @@
+.header {
+	text-align: right;
+	height:50px;
+	border: 10px solid lightblue;
+}
+
+.window {
+	border: 10px solid lightblue;
+	padding: 45px;
+}
+
+.window1 {
+	text-align: center;
+}
