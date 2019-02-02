@@ -17,7 +17,7 @@ import { FindValueSubscriber } from 'rxjs/internal/operators/find';
 export class CatalogComponent implements OnInit {
 public data={};
 public data1;
-
+public list=[1,2,3];
   constructor(private dataService : DataService ) { }
 
 ngOnInit(){

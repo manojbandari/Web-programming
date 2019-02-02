@@ -1,11 +1,19 @@
+<div>
+
 
 <li *ngFor="let array of data1">
-title:{{array[0].title}}
+<p *ngFor=" let list of list" >
+
+title:{{array[list].title}}
 <br>
-description:{{array[0].description}}
+description:{{array[list].description}}
 <br>
-quantity:{{array[0].quantity}}
-</li>
+image:<img src="{{array[list].image}}">
+<br>
+quantity:{{array[list].quantity}}
+</p>
+</li> 
+</div>
 
 
 
